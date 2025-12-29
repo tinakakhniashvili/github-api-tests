@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="web">
+  <test name="Web UI E2E Tests">
+    <classes>
+      <class name="com.solvd.ui.tests.LoginE2ETest"/>
+      <class name="com.solvd.ui.tests.AddToCartE2ETest"/>
+      <class name="com.solvd.ui.tests.PurchaseE2ETest"/>
+      <class name="com.solvd.ui.tests.LockedUserLoginE2ETest"/>
+      <class name="com.solvd.ui.tests.CheckoutValidationE2ETest"/>
+      <class name="com.solvd.ui.tests.AddRemoveConsistencyE2ETest"/>
+    </classes>
+  </test>
+</suite>
