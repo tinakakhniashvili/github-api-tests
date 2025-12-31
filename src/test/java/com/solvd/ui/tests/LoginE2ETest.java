@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
 public class LoginE2ETest implements IAbstractTest {
 
     @Test
-    public void testLoginSuccess() {
+    public void verifySuccessfulLoginTest() {
         ResourceBundle td = ResourceBundle.getBundle("_testdata");
         String user = td.getString("sauce.user");
         String pass = td.getString("sauce.password");
@@ -20,6 +20,6 @@ public class LoginE2ETest implements IAbstractTest {
         loginPage.open();
 
         InventoryPage inventoryPage = loginPage.login(user, pass);
-        Assert.assertTrue(inventoryPage.isPageOpened(), "Inventory (Products) page is not opened after login");
+        Assert.assertTrue(inventoryPage.isPageOpened());
     }
 }

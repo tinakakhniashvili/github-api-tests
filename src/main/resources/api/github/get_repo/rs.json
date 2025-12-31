@@ -1,8 +1,8 @@
 {
-  "name": "Hello-World",
-  "full_name": "octocat/Hello-World",
+  "name": "${repo}",
+  "full_name": "${owner}/${repo}",
   "private": false,
   "owner": {
-    "login": "octocat"
+    "login": "${owner}"
   }
 }

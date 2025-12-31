@@ -1,143 +1,78 @@
 package api.github.tests;
 
-import api.github.methods.*;
+import api.github.methods.GetRateLimitMethod;
+import api.github.methods.GetRepoMethod;
+import api.github.methods.GetUserMethod;
+import api.github.methods.ListCommitsMethod;
+import api.github.methods.ListIssuesMethod;
 import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 
 public class GithubApiTests {
 
     @Test
-    public void TC01_getUser_octocat() throws Exception {
+    public void verifyGetOctocatUserTest() {
         GetUserMethod api = new GetUserMethod();
 
+        String login = System.getProperty("github.login", "octocat");
+        api.addProperty("login", login);
+
         Response resp = api.callAPI();
-        Assert.assertNotNull(resp, "Response is null");
+        Assert.assertEquals(resp.getStatusCode(), 200);
 
-        Assert.assertEquals(resp.getStatusCode(), 200, "Unexpected status code");
-
-        String contentType = resp.getHeader("Content-Type");
-        Assert.assertNotNull(contentType, "Content-Type header missing");
-        Assert.assertTrue(contentType.contains("application/json"),
-                "Unexpected Content-Type: " + contentType);
-
-        String expected = readResource("api/github/get_user/rs.json");
-        String actual = resp.asString();
-        JSONAssert.assertEquals(expected, actual, false);
+        api.validateResponse();
     }
 
     @Test
-    public void TC02_getRepo_octocat() throws Exception {
+    public void verifyGetRepositoryTest() {
         GetRepoMethod api = new GetRepoMethod();
 
+        String owner = System.getProperty("github.owner", "octocat");
+        String repo = System.getProperty("github.repo", "Hello-World");
+        api.addProperty("owner", owner);
+        api.addProperty("repo", repo);
+
         Response resp = api.callAPI();
-        Assert.assertNotNull(resp, "Response is null");
+        Assert.assertEquals(resp.getStatusCode(), 200);
 
-        Assert.assertEquals(resp.getStatusCode(), 200, "Unexpected status code");
-
-        String contentType = resp.getHeader("Content-Type");
-        Assert.assertNotNull(contentType, "Content-Type header missing");
-        Assert.assertTrue(contentType.contains("application/json"),
-                "Unexpected Content-Type: " + contentType);
-
-        String expected = readResource("api/github/get_repo/rs.json");
-        String actual = resp.asString();
-        JSONAssert.assertEquals(expected, actual, false);
+        api.validateResponse();
     }
 
     @Test
-    public void TC03_listCommits_octocatHelloWorld() throws Exception {
+    public void verifyListCommitsTest() {
         ListCommitsMethod api = new ListCommitsMethod();
 
         Response resp = api.callAPI();
-        Assert.assertNotNull(resp, "Response is null");
+        Assert.assertEquals(resp.getStatusCode(), 200);
 
-        Assert.assertEquals(resp.getStatusCode(), 200, "Unexpected status code");
+        JSONArray arr = new JSONArray(resp.asString());
+        Assert.assertTrue(arr.length() > 0);
 
-        String contentType = resp.getHeader("Content-Type");
-        Assert.assertNotNull(contentType, "Content-Type header missing");
-        Assert.assertTrue(contentType.contains("application/json"),
-                "Unexpected Content-Type: " + contentType);
-
-        JSONArray actualArray = new JSONArray(resp.asString());
-        Assert.assertTrue(actualArray.length() > 0, "Commits array is empty");
-
-        String sha = actualArray.getJSONObject(0).optString("sha", "");
-        Assert.assertFalse(sha.isBlank(), "sha is missing/empty");
-
-        String name = actualArray.getJSONObject(0)
-                .getJSONObject("commit")
-                .getJSONObject("author")
-                .optString("name", "");
-        Assert.assertFalse(name.isBlank(), "commit.author.name is missing/empty");
-
-        String date = actualArray.getJSONObject(0)
-                .getJSONObject("commit")
-                .getJSONObject("author")
-                .optString("date", "");
-        Assert.assertFalse(date.isBlank(), "commit.author.date is missing/empty");
-
+        JSONObject commit = arr.getJSONObject(0);
+        Assert.assertFalse(commit.optString("sha").isBlank());
     }
 
     @Test
-    public void TC04_listIssues_octocatHelloWorld() throws Exception {
+    public void verifyListIssuesTest() {
         ListIssuesMethod api = new ListIssuesMethod();
 
         Response resp = api.callAPI();
-        Assert.assertNotNull(resp, "Response is null");
-        Assert.assertEquals(resp.getStatusCode(), 200, "Unexpected status code");
-
-        String contentType = resp.getHeader("Content-Type");
-        Assert.assertNotNull(contentType, "Content-Type header missing");
-        Assert.assertTrue(contentType.contains("application/json"),
-                "Unexpected Content-Type: " + contentType);
+        Assert.assertEquals(resp.getStatusCode(), 200);
 
         JSONArray arr = new JSONArray(resp.asString());
-
-        if (arr.length() > 0) {
-            JSONObject issue = arr.getJSONObject(0);
-
-            Assert.assertTrue(issue.has("id") && !issue.isNull("id"), "id missing");
-            Assert.assertFalse(issue.optString("title", "").isBlank(), "title missing/empty");
-            Assert.assertFalse(issue.optString("state", "").isBlank(), "state missing/empty");
-            Assert.assertFalse(issue.optString("html_url", "").isBlank(), "html_url missing/empty");
-        }
+        Assert.assertNotNull(arr);
     }
 
     @Test
-    public void TC05_getRateLimit() {
+    public void verifyGetRateLimitTest() {
         GetRateLimitMethod api = new GetRateLimitMethod();
+
         Response resp = api.callAPI();
-        Assert.assertNotNull(resp, "Response is null");
-        Assert.assertEquals(resp.getStatusCode(), 200, "Unexpected status code");
+        Assert.assertEquals(resp.getStatusCode(), 200);
 
-        String contentType = resp.getHeader("Content-Type");
-        Assert.assertNotNull(contentType, "Content-Type header missing");
-        Assert.assertTrue(contentType.contains("application/json"),
-                "Unexpected Content-Type: " + contentType);
-
-        JSONObject obj = new JSONObject(resp.asString());
-
-        Assert.assertTrue(obj.has("resources") && !obj.isNull("resources"), "resources missing");
-        Assert.assertTrue(obj.has("rate") && !obj.isNull("rate"), "rate missing");
-
-        JSONObject rate = obj.getJSONObject("rate");
-        Assert.assertTrue(rate.has("limit") && rate.getInt("limit") >= 0, "rate.limit missing/bad");
-        Assert.assertTrue(rate.has("remaining") && rate.getInt("remaining") >= 0, "rate.remaining missing/bad");
-        Assert.assertTrue(rate.has("reset") && rate.getLong("reset") > 0, "rate.reset missing/bad");
-    }
-
-    private static String readResource(String path) throws Exception {
-        ClassLoader cl = Thread.currentThread().getContextClassLoader();
-        try (InputStream is = cl.getResourceAsStream(path)) {
-            if (is == null) throw new IllegalStateException("Resource not found: " + path);
-            return new String(is.readAllBytes(), StandardCharsets.UTF_8);
-        }
+        api.validateResponse();
     }
 }

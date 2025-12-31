@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPage {
 
-    @FindBy(id = "user-name")
+    @FindBy(xpath = "//input[@id='user-name']")
     private ExtendedWebElement usernameInput;
 
     @FindBy(id = "password")
@@ -39,13 +39,6 @@ public class LoginPage extends AbstractPage {
         passwordInput.type(password);
         loginButton.click();
         return new InventoryPage(getDriver());
-    }
-
-    public LoginPage loginFail(String username, String password) {
-        usernameInput.type(username);
-        passwordInput.type(password);
-        loginButton.click();
-        return this;
     }
 
     public boolean isErrorPresent() {
