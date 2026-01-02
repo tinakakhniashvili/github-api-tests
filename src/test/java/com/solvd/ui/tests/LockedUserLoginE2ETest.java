@@ -18,7 +18,7 @@ public class LockedUserLoginE2ETest implements IAbstractTest {
         LoginPage login = new LoginPage(getDriver());
         login.open();
 
-        login.loginFail(locked, pass);
+        login.login(locked, pass);
         Assert.assertTrue(login.isErrorPresent(), "Error should be shown for locked user");
         Assert.assertTrue(login.getErrorText().toLowerCase().contains("locked"), "Expected locked message");
     }

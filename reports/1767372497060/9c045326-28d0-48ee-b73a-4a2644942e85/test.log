@@ -1,0 +1,11 @@
+[2026-01-02 04:48:22] [1] [WARN] Reporting disabled: using no op test run registrar
+[2026-01-02 04:48:22] [1] [INFO] TEST [Web UI E2E Tests - testAddItemToCart] STARTED at [20:48:22 2026-01-02]
+[2026-01-02 04:48:22] [1] [INFO] Starting driver session...
+[2026-01-02 04:48:22] [1] [INFO] Driver session started.
+[2026-01-02 04:48:22] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2026-01-02 04:48:23] [1] [INFO] Keys 'standard_user' are sent to element 'usernameInput'.
+[2026-01-02 04:48:23] [1] [INFO] Keys 'secret_sauce' are sent to element 'passwordInput'.
+[2026-01-02 04:48:23] [1] [INFO] Element 'loginButton' is clicked.
+[2026-01-02 04:48:23] [1] [INFO] Element 'addRemoveBtn' is clicked.
+[2026-01-02 04:48:24] [1] [INFO] Element 'cartLink' is clicked.
+[2026-01-02 04:48:24] [1] [INFO] TEST [Web UI E2E Tests - testAddItemToCart] PASSED at [20:48:24 2026-01-02]

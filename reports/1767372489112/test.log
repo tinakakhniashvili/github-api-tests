@@ -1,0 +1,2940 @@
+[2026-01-02 04:48:09] [1] [INFO] Request method:	GET
+Request URI:	https://api.github.com/users/octocat
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 02 Jan 2026 16:48:09 GMT
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+ETag: W/"89e42b4efec74c965766f3953502da48250dd921abbf2c13f3f4f8657a71cad9"
+Last-Modified: Mon, 22 Dec 2025 12:24:29 GMT
+X-GitHub-Media-Type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Content-Encoding: gzip
+Server: github.com
+Accept-Ranges: bytes
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 55
+X-RateLimit-Reset: 1767376052
+X-RateLimit-Resource: core
+X-RateLimit-Used: 5
+Content-Length: 494
+X-GitHub-Request-Id: C6A3:326B17:1CEE1AFB:1A14B5F5:6957F6C8
+
+{
+    "login": "octocat",
+    "id": 583231,
+    "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/octocat",
+    "html_url": "https://github.com/octocat",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "name": "The Octocat",
+    "company": "@github",
+    "blog": "https://github.blog",
+    "location": "San Francisco",
+    "email": null,
+    "hireable": null,
+    "bio": null,
+    "twitter_username": null,
+    "public_repos": 8,
+    "public_gists": 8,
+    "followers": 21372,
+    "following": 9,
+    "created_at": "2011-01-25T18:44:36Z",
+    "updated_at": "2025-12-22T12:24:29Z"
+}
+
+[2026-01-02 04:48:09] [1] [INFO] Request method:	GET
+Request URI:	https://api.github.com/rate_limit
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+Cache-Control: no-cache
+Content-Security-Policy: default-src 'none'
+Content-Type: application/json; charset=utf-8
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-GitHub-Media-Type: github.v3; format=json
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 55
+X-RateLimit-Reset: 1767376052
+X-RateLimit-Resource: core
+X-RateLimit-Used: 5
+X-XSS-Protection: 1; mode=block
+Date: Fri, 02 Jan 2026 16:48:09 GMT
+Content-Length: 560
+X-GitHub-Request-Id: 61F7:19094E:1DEBF36D:1B01ACA4:6957F6C9
+
+{
+    "resources": {
+        "code_search": {
+            "limit": 60,
+            "remaining": 55,
+            "reset": 1767376052,
+            "used": 5,
+            "resource": "code_search"
+        },
+        "core": {
+            "limit": 60,
+            "remaining": 55,
+            "reset": 1767376052,
+            "used": 5,
+            "resource": "core"
+        },
+        "graphql": {
+            "limit": 0,
+            "remaining": 0,
+            "reset": 1767376089,
+            "used": 0,
+            "resource": "graphql"
+        },
+        "integration_manifest": {
+            "limit": 5000,
+            "remaining": 5000,
+            "reset": 1767376089,
+            "used": 0,
+            "resource": "integration_manifest"
+        },
+        "search": {
+            "limit": 10,
+            "remaining": 10,
+            "reset": 1767372549,
+            "used": 0,
+            "resource": "search"
+        }
+    },
+    "rate": {
+        "limit": 60,
+        "remaining": 55,
+        "reset": 1767376052,
+        "used": 5,
+        "resource": "core"
+    }
+}
+
+[2026-01-02 04:48:09] [1] [INFO] Request method:	GET
+Request URI:	https://api.github.com/repos/octocat/Hello-World
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 02 Jan 2026 16:48:09 GMT
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+ETag: W/"9c39adb1f59da2ffc6b92a1fd211a3894ebfa5a48d2dca27ba8d376db3efed92"
+Last-Modified: Fri, 02 Jan 2026 14:47:54 GMT
+X-GitHub-Media-Type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Content-Encoding: gzip
+Server: github.com
+Accept-Ranges: bytes
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 54
+X-RateLimit-Reset: 1767376052
+X-RateLimit-Resource: core
+X-RateLimit-Used: 6
+Content-Length: 1290
+X-GitHub-Request-Id: C6A5:2B4A30:1D2F9165:1A3FB8D7:6957F6C9
+
+{
+    "id": 1296269,
+    "node_id": "MDEwOlJlcG9zaXRvcnkxMjk2MjY5",
+    "name": "Hello-World",
+    "full_name": "octocat/Hello-World",
+    "private": false,
+    "owner": {
+        "login": "octocat",
+        "id": 583231,
+        "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/octocat",
+        "html_url": "https://github.com/octocat",
+        "followers_url": "https://api.github.com/users/octocat/followers",
+        "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+        "organizations_url": "https://api.github.com/users/octocat/orgs",
+        "repos_url": "https://api.github.com/users/octocat/repos",
+        "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/octocat/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/octocat/Hello-World",
+    "description": "My first repository on GitHub!",
+    "fork": false,
+    "url": "https://api.github.com/repos/octocat/Hello-World",
+    "forks_url": "https://api.github.com/repos/octocat/Hello-World/forks",
+    "keys_url": "https://api.github.com/repos/octocat/Hello-World/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/octocat/Hello-World/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/octocat/Hello-World/teams",
+    "hooks_url": "https://api.github.com/repos/octocat/Hello-World/hooks",
+    "issue_events_url": "https://api.github.com/repos/octocat/Hello-World/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/octocat/Hello-World/events",
+    "assignees_url": "https://api.github.com/repos/octocat/Hello-World/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/octocat/Hello-World/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/octocat/Hello-World/tags",
+    "blobs_url": "https://api.github.com/repos/octocat/Hello-World/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/octocat/Hello-World/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/octocat/Hello-World/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/octocat/Hello-World/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/octocat/Hello-World/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/octocat/Hello-World/languages",
+    "stargazers_url": "https://api.github.com/repos/octocat/Hello-World/stargazers",
+    "contributors_url": "https://api.github.com/repos/octocat/Hello-World/contributors",
+    "subscribers_url": "https://api.github.com/repos/octocat/Hello-World/subscribers",
+    "subscription_url": "https://api.github.com/repos/octocat/Hello-World/subscription",
+    "commits_url": "https://api.github.com/repos/octocat/Hello-World/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/octocat/Hello-World/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/octocat/Hello-World/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/octocat/Hello-World/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/octocat/Hello-World/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/octocat/Hello-World/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/octocat/Hello-World/merges",
+    "archive_url": "https://api.github.com/repos/octocat/Hello-World/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/octocat/Hello-World/downloads",
+    "issues_url": "https://api.github.com/repos/octocat/Hello-World/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/octocat/Hello-World/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/octocat/Hello-World/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/octocat/Hello-World/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/octocat/Hello-World/labels{/name}",
+    "releases_url": "https://api.github.com/repos/octocat/Hello-World/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/octocat/Hello-World/deployments",
+    "created_at": "2011-01-26T19:01:12Z",
+    "updated_at": "2026-01-02T14:47:54Z",
+    "pushed_at": "2024-08-20T23:54:42Z",
+    "git_url": "git://github.com/octocat/Hello-World.git",
+    "ssh_url": "git@github.com:octocat/Hello-World.git",
+    "clone_url": "https://github.com/octocat/Hello-World.git",
+    "svn_url": "https://github.com/octocat/Hello-World",
+    "homepage": "",
+    "size": 1,
+    "stargazers_count": 3407,
+    "watchers_count": 3407,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 6716,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 2784,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 6716,
+    "open_issues": 2784,
+    "watchers": 3407,
+    "default_branch": "master",
+    "temp_clone_token": null,
+    "network_count": 6716,
+    "subscribers_count": 1729
+}
+
+[2026-01-02 04:48:10] [1] [INFO] Request method:	GET
+Request URI:	https://api.github.com/repos/octocat/Hello-World/commits
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 02 Jan 2026 16:48:10 GMT
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+ETag: W/"fb5582a15344e8f4eb40107f9cc0735a20dd98423b358c10bb7e560cb05e68e0"
+Last-Modified: Tue, 06 Mar 2012 23:06:50 GMT
+X-GitHub-Media-Type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Content-Encoding: gzip
+Server: github.com
+Accept-Ranges: bytes
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 53
+X-RateLimit-Reset: 1767376052
+X-RateLimit-Resource: core
+X-RateLimit-Used: 7
+Content-Length: 1531
+X-GitHub-Request-Id: 63F6:1EB280:1E11373E:1B21787B:6957F6CA
+
+[
+    {
+        "sha": "7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+        "node_id": "MDY6Q29tbWl0MTI5NjI2OTo3ZmQxYTYwYjAxZjkxYjMxNGY1OTk1NWE0ZTRkNGU4MGQ4ZWRmMTFk",
+        "commit": {
+            "author": {
+                "name": "The Octocat",
+                "email": "octocat@nowhere.com",
+                "date": "2012-03-06T23:06:50Z"
+            },
+            "committer": {
+                "name": "The Octocat",
+                "email": "octocat@nowhere.com",
+                "date": "2012-03-06T23:06:50Z"
+            },
+            "message": "Merge pull request #6 from Spaceghost/patch-1\n\nNew line at end of file.",
+            "tree": {
+                "sha": "b4eecafa9be2f2006ce1b709d6857b07069b4608",
+                "url": "https://api.github.com/repos/octocat/Hello-World/git/trees/b4eecafa9be2f2006ce1b709d6857b07069b4608"
+            },
+            "url": "https://api.github.com/repos/octocat/Hello-World/git/commits/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+            "comment_count": 119,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/octocat/Hello-World/commits/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+        "html_url": "https://github.com/octocat/Hello-World/commit/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/commits/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d/comments",
+        "author": {
+            "login": "octocat",
+            "id": 583231,
+            "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+            "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/octocat",
+            "html_url": "https://github.com/octocat",
+            "followers_url": "https://api.github.com/users/octocat/followers",
+            "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+            "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+            "organizations_url": "https://api.github.com/users/octocat/orgs",
+            "repos_url": "https://api.github.com/users/octocat/repos",
+            "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/octocat/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "octocat",
+            "id": 583231,
+            "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+            "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/octocat",
+            "html_url": "https://github.com/octocat",
+            "followers_url": "https://api.github.com/users/octocat/followers",
+            "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+            "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+            "organizations_url": "https://api.github.com/users/octocat/orgs",
+            "repos_url": "https://api.github.com/users/octocat/repos",
+            "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/octocat/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+                "url": "https://api.github.com/repos/octocat/Hello-World/commits/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+                "html_url": "https://github.com/octocat/Hello-World/commit/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e"
+            },
+            {
+                "sha": "762941318ee16e59dabbacb1b4049eec22f0d303",
+                "url": "https://api.github.com/repos/octocat/Hello-World/commits/762941318ee16e59dabbacb1b4049eec22f0d303",
+                "html_url": "https://github.com/octocat/Hello-World/commit/762941318ee16e59dabbacb1b4049eec22f0d303"
+            }
+        ]
+    },
+    {
+        "sha": "762941318ee16e59dabbacb1b4049eec22f0d303",
+        "node_id": "MDY6Q29tbWl0MTI5NjI2OTo3NjI5NDEzMThlZTE2ZTU5ZGFiYmFjYjFiNDA0OWVlYzIyZjBkMzAz",
+        "commit": {
+            "author": {
+                "name": "Johnneylee Jack Rollins",
+                "email": "Johnneylee.rollins@gmail.com",
+                "date": "2011-09-14T04:42:41Z"
+            },
+            "committer": {
+                "name": "Johnneylee Jack Rollins",
+                "email": "Johnneylee.rollins@gmail.com",
+                "date": "2011-09-14T04:42:41Z"
+            },
+            "message": "New line at end of file. --Signed off by Spaceghost",
+            "tree": {
+                "sha": "b4eecafa9be2f2006ce1b709d6857b07069b4608",
+                "url": "https://api.github.com/repos/octocat/Hello-World/git/trees/b4eecafa9be2f2006ce1b709d6857b07069b4608"
+            },
+            "url": "https://api.github.com/repos/octocat/Hello-World/git/commits/762941318ee16e59dabbacb1b4049eec22f0d303",
+            "comment_count": 173,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/octocat/Hello-World/commits/762941318ee16e59dabbacb1b4049eec22f0d303",
+        "html_url": "https://github.com/octocat/Hello-World/commit/762941318ee16e59dabbacb1b4049eec22f0d303",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/commits/762941318ee16e59dabbacb1b4049eec22f0d303/comments",
+        "author": {
+            "login": "Spaceghost",
+            "id": 251370,
+            "node_id": "MDQ6VXNlcjI1MTM3MA==",
+            "avatar_url": "https://avatars.githubusercontent.com/u/251370?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Spaceghost",
+            "html_url": "https://github.com/Spaceghost",
+            "followers_url": "https://api.github.com/users/Spaceghost/followers",
+            "following_url": "https://api.github.com/users/Spaceghost/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Spaceghost/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Spaceghost/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Spaceghost/subscriptions",
+            "organizations_url": "https://api.github.com/users/Spaceghost/orgs",
+            "repos_url": "https://api.github.com/users/Spaceghost/repos",
+            "events_url": "https://api.github.com/users/Spaceghost/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Spaceghost/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "Spaceghost",
+            "id": 251370,
+            "node_id": "MDQ6VXNlcjI1MTM3MA==",
+            "avatar_url": "https://avatars.githubusercontent.com/u/251370?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Spaceghost",
+            "html_url": "https://github.com/Spaceghost",
+            "followers_url": "https://api.github.com/users/Spaceghost/followers",
+            "following_url": "https://api.github.com/users/Spaceghost/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Spaceghost/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Spaceghost/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Spaceghost/subscriptions",
+            "organizations_url": "https://api.github.com/users/Spaceghost/orgs",
+            "repos_url": "https://api.github.com/users/Spaceghost/repos",
+            "events_url": "https://api.github.com/users/Spaceghost/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Spaceghost/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+                "url": "https://api.github.com/repos/octocat/Hello-World/commits/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+                "html_url": "https://github.com/octocat/Hello-World/commit/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e"
+            }
+        ]
+    },
+    {
+        "sha": "553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+        "node_id": "MDY6Q29tbWl0MTI5NjI2OTo1NTNjMjA3N2YwZWRjM2Q1ZGM1ZDE3MjYyZjZhYTQ5OGU2OWQ2Zjhl",
+        "commit": {
+            "author": {
+                "name": "cameronmcefee",
+                "email": "cameron@github.com",
+                "date": "2011-01-26T19:06:08Z"
+            },
+            "committer": {
+                "name": "cameronmcefee",
+                "email": "cameron@github.com",
+                "date": "2011-01-26T19:06:08Z"
+            },
+            "message": "first commit",
+            "tree": {
+                "sha": "fcf4a9bba6857422971d67147517eb5edfdbf48d",
+                "url": "https://api.github.com/repos/octocat/Hello-World/git/trees/fcf4a9bba6857422971d67147517eb5edfdbf48d"
+            },
+            "url": "https://api.github.com/repos/octocat/Hello-World/git/commits/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+            "comment_count": 69,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/octocat/Hello-World/commits/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+        "html_url": "https://github.com/octocat/Hello-World/commit/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/commits/553c2077f0edc3d5dc5d17262f6aa498e69d6f8e/comments",
+        "author": {
+            "login": "Cameron423698",
+            "id": 94719050,
+            "node_id": "U_kgDOBaVMSg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/94719050?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Cameron423698",
+            "html_url": "https://github.com/Cameron423698",
+            "followers_url": "https://api.github.com/users/Cameron423698/followers",
+            "following_url": "https://api.github.com/users/Cameron423698/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Cameron423698/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Cameron423698/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Cameron423698/subscriptions",
+            "organizations_url": "https://api.github.com/users/Cameron423698/orgs",
+            "repos_url": "https://api.github.com/users/Cameron423698/repos",
+            "events_url": "https://api.github.com/users/Cameron423698/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Cameron423698/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "Cameron423698",
+            "id": 94719050,
+            "node_id": "U_kgDOBaVMSg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/94719050?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Cameron423698",
+            "html_url": "https://github.com/Cameron423698",
+            "followers_url": "https://api.github.com/users/Cameron423698/followers",
+            "following_url": "https://api.github.com/users/Cameron423698/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Cameron423698/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Cameron423698/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Cameron423698/subscriptions",
+            "organizations_url": "https://api.github.com/users/Cameron423698/orgs",
+            "repos_url": "https://api.github.com/users/Cameron423698/repos",
+            "events_url": "https://api.github.com/users/Cameron423698/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Cameron423698/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            
+        ]
+    }
+]
+
+[2026-01-02 04:48:10] [1] [INFO] Request method:	GET
+Request URI:	https://api.github.com/repos/octocat/Hello-World/issues
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 02 Jan 2026 16:48:10 GMT
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+ETag: W/"07ce50a693ce9f3290dbea21ede6b2943d785d3a071c3dc6fe0697ff2232fbec"
+X-GitHub-Media-Type: github.v3; format=json
+Link: <https://api.github.com/repositories/1296269/issues?after=Y3Vyc29yOnYyOpLPAAABm3zMGEjO4QnjuA%3D%3D&per_page=30&page=2>; rel="next"
+x-github-api-version-selected: 2022-11-28
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Content-Encoding: gzip
+Server: github.com
+Accept-Ranges: bytes
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 52
+X-RateLimit-Reset: 1767376052
+X-RateLimit-Resource: core
+X-RateLimit-Used: 8
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: C6A7:1E6DBC:1BDEDBF7:1916658F:6957F6CA
+
+[
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5660",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5660/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5660/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5660/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5660",
+        "id": 3776408302,
+        "node_id": "I_kwDOABPHjc7hF2ru",
+        "number": 5660,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T13:50:06Z",
+        "updated_at": "2026-01-02T13:50:06Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5660/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5660/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5658",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5658/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5658/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5658/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5658",
+        "id": 3776353300,
+        "node_id": "I_kwDOABPHjc7hFpQU",
+        "number": 5658,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T13:18:17Z",
+        "updated_at": "2026-01-02T13:18:17Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5658/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5658/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5656",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5656/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5656/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5656/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5656",
+        "id": 3776345422,
+        "node_id": "I_kwDOABPHjc7hFnVO",
+        "number": 5656,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T13:13:41Z",
+        "updated_at": "2026-01-02T13:13:41Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5656/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5656/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5654",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5654/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5654/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5654/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5654",
+        "id": 3776330985,
+        "node_id": "I_kwDOABPHjc7hFjzp",
+        "number": 5654,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T13:04:41Z",
+        "updated_at": "2026-01-02T13:04:41Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5654/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5654/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5652",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5652/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5652/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5652/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5652",
+        "id": 3776311091,
+        "node_id": "I_kwDOABPHjc7hFe8z",
+        "number": 5652,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:52:20Z",
+        "updated_at": "2026-01-02T12:52:20Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5652/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5652/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5650",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5650/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5650/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5650/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5650",
+        "id": 3776307562,
+        "node_id": "I_kwDOABPHjc7hFeFq",
+        "number": 5650,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:50:08Z",
+        "updated_at": "2026-01-02T12:50:08Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5650/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5650/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5648",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5648/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5648/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5648/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5648",
+        "id": 3776283007,
+        "node_id": "I_kwDOABPHjc7hFYF_",
+        "number": 5648,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:34:48Z",
+        "updated_at": "2026-01-02T12:34:48Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5648/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5648/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5646",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5646/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5646/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5646/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5646",
+        "id": 3776280729,
+        "node_id": "I_kwDOABPHjc7hFXiZ",
+        "number": 5646,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:33:15Z",
+        "updated_at": "2026-01-02T12:33:15Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5646/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5646/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5644",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5644/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5644/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5644/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5644",
+        "id": 3776272451,
+        "node_id": "I_kwDOABPHjc7hFVhD",
+        "number": 5644,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:28:01Z",
+        "updated_at": "2026-01-02T12:28:01Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5644/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5644/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5642",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5642/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5642/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5642/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5642",
+        "id": 3776268487,
+        "node_id": "I_kwDOABPHjc7hFUjH",
+        "number": 5642,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:25:29Z",
+        "updated_at": "2026-01-02T12:25:29Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5642/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5642/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5640",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5640/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5640/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5640/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5640",
+        "id": 3776259614,
+        "node_id": "I_kwDOABPHjc7hFSYe",
+        "number": 5640,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:20:13Z",
+        "updated_at": "2026-01-02T12:20:13Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5640/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5640/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5638",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5638/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5638/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5638/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5638",
+        "id": 3776251015,
+        "node_id": "I_kwDOABPHjc7hFQSH",
+        "number": 5638,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:15:11Z",
+        "updated_at": "2026-01-02T12:15:11Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5638/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5638/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5636",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5636/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5636/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5636/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5636",
+        "id": 3776227995,
+        "node_id": "I_kwDOABPHjc7hFKqb",
+        "number": 5636,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T12:01:31Z",
+        "updated_at": "2026-01-02T12:01:31Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5636/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5636/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5634",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5634/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5634/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5634/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5634",
+        "id": 3776202266,
+        "node_id": "I_kwDOABPHjc7hFEYa",
+        "number": 5634,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T11:45:19Z",
+        "updated_at": "2026-01-02T11:45:19Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5634/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5634/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5632",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5632/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5632/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5632/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5632",
+        "id": 3776195755,
+        "node_id": "I_kwDOABPHjc7hFCyr",
+        "number": 5632,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T11:41:45Z",
+        "updated_at": "2026-01-02T11:41:45Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5632/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5632/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5630",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5630/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5630/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5630/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5630",
+        "id": 3776167718,
+        "node_id": "I_kwDOABPHjc7hE78m",
+        "number": 5630,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T11:23:23Z",
+        "updated_at": "2026-01-02T11:23:23Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5630/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5630/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5629",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5629/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5629/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5629/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5629",
+        "id": 3776128489,
+        "node_id": "I_kwDOABPHjc7hEyXp",
+        "number": 5629,
+        "title": "Test Issue 1767351547",
+        "user": {
+            "login": "neo-noclick",
+            "id": 236739863,
+            "node_id": "U_kgDODhxdFw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/236739863?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/neo-noclick",
+            "html_url": "https://github.com/neo-noclick",
+            "followers_url": "https://api.github.com/users/neo-noclick/followers",
+            "following_url": "https://api.github.com/users/neo-noclick/following{/other_user}",
+            "gists_url": "https://api.github.com/users/neo-noclick/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/neo-noclick/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/neo-noclick/subscriptions",
+            "organizations_url": "https://api.github.com/users/neo-noclick/orgs",
+            "repos_url": "https://api.github.com/users/neo-noclick/repos",
+            "events_url": "https://api.github.com/users/neo-noclick/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/neo-noclick/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T10:59:08Z",
+        "updated_at": "2026-01-02T10:59:08Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated tests.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5629/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5629/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5628",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5628/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5628/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5628/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5628",
+        "id": 3776101911,
+        "node_id": "I_kwDOABPHjc7hEr4X",
+        "number": 5628,
+        "title": "Test Issue 1767350569",
+        "user": {
+            "login": "neo-noclick",
+            "id": 236739863,
+            "node_id": "U_kgDODhxdFw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/236739863?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/neo-noclick",
+            "html_url": "https://github.com/neo-noclick",
+            "followers_url": "https://api.github.com/users/neo-noclick/followers",
+            "following_url": "https://api.github.com/users/neo-noclick/following{/other_user}",
+            "gists_url": "https://api.github.com/users/neo-noclick/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/neo-noclick/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/neo-noclick/subscriptions",
+            "organizations_url": "https://api.github.com/users/neo-noclick/orgs",
+            "repos_url": "https://api.github.com/users/neo-noclick/repos",
+            "events_url": "https://api.github.com/users/neo-noclick/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/neo-noclick/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T10:42:49Z",
+        "updated_at": "2026-01-02T10:42:49Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated tests.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5628/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5628/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5626",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5626/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5626/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5626/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5626",
+        "id": 3776101745,
+        "node_id": "I_kwDOABPHjc7hEr1x",
+        "number": 5626,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T10:42:43Z",
+        "updated_at": "2026-01-02T10:42:43Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5626/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5626/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5624",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5624/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5624/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5624/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5624",
+        "id": 3776097272,
+        "node_id": "I_kwDOABPHjc7hEqv4",
+        "number": 5624,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T10:39:58Z",
+        "updated_at": "2026-01-02T10:39:58Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5624/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5624/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5622",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5622/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5622/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5622/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5622",
+        "id": 3776097176,
+        "node_id": "I_kwDOABPHjc7hEquY",
+        "number": 5622,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T10:39:56Z",
+        "updated_at": "2026-01-02T10:39:56Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5622/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5622/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5620",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5620/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5620/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5620/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5620",
+        "id": 3776092810,
+        "node_id": "I_kwDOABPHjc7hEpqK",
+        "number": 5620,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T10:37:09Z",
+        "updated_at": "2026-01-02T10:37:09Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5620/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5620/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5619",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5619/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5619/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5619/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5619",
+        "id": 3776082966,
+        "node_id": "I_kwDOABPHjc7hEnQW",
+        "number": 5619,
+        "title": "Test Issue 1767349963",
+        "user": {
+            "login": "neo-noclick",
+            "id": 236739863,
+            "node_id": "U_kgDODhxdFw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/236739863?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/neo-noclick",
+            "html_url": "https://github.com/neo-noclick",
+            "followers_url": "https://api.github.com/users/neo-noclick/followers",
+            "following_url": "https://api.github.com/users/neo-noclick/following{/other_user}",
+            "gists_url": "https://api.github.com/users/neo-noclick/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/neo-noclick/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/neo-noclick/subscriptions",
+            "organizations_url": "https://api.github.com/users/neo-noclick/orgs",
+            "repos_url": "https://api.github.com/users/neo-noclick/repos",
+            "events_url": "https://api.github.com/users/neo-noclick/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/neo-noclick/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T10:32:43Z",
+        "updated_at": "2026-01-02T10:32:43Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated tests.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5619/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5619/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5617",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5617/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5617/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5617/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5617",
+        "id": 3775968840,
+        "node_id": "I_kwDOABPHjc7hELZI",
+        "number": 5617,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T09:36:53Z",
+        "updated_at": "2026-01-02T09:36:53Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5617/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5617/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5615",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5615/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5615/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5615/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5615",
+        "id": 3775928136,
+        "node_id": "I_kwDOABPHjc7hEBdI",
+        "number": 5615,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T09:16:21Z",
+        "updated_at": "2026-01-02T09:16:21Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5615/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5615/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5614",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5614/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5614/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5614/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5614",
+        "id": 3775746767,
+        "node_id": "I_kwDOABPHjc7hDVLP",
+        "number": 5614,
+        "title": "Test Issue 1767337497",
+        "user": {
+            "login": "neo-noclick",
+            "id": 236739863,
+            "node_id": "U_kgDODhxdFw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/236739863?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/neo-noclick",
+            "html_url": "https://github.com/neo-noclick",
+            "followers_url": "https://api.github.com/users/neo-noclick/followers",
+            "following_url": "https://api.github.com/users/neo-noclick/following{/other_user}",
+            "gists_url": "https://api.github.com/users/neo-noclick/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/neo-noclick/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/neo-noclick/subscriptions",
+            "organizations_url": "https://api.github.com/users/neo-noclick/orgs",
+            "repos_url": "https://api.github.com/users/neo-noclick/repos",
+            "events_url": "https://api.github.com/users/neo-noclick/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/neo-noclick/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T07:04:57Z",
+        "updated_at": "2026-01-02T07:04:57Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated tests.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5614/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5614/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5613",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5613/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5613/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5613/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5613",
+        "id": 3775706907,
+        "node_id": "I_kwDOABPHjc7hDLcb",
+        "number": 5613,
+        "title": "Test Issue 1767335483",
+        "user": {
+            "login": "neo-noclick",
+            "id": 236739863,
+            "node_id": "U_kgDODhxdFw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/236739863?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/neo-noclick",
+            "html_url": "https://github.com/neo-noclick",
+            "followers_url": "https://api.github.com/users/neo-noclick/followers",
+            "following_url": "https://api.github.com/users/neo-noclick/following{/other_user}",
+            "gists_url": "https://api.github.com/users/neo-noclick/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/neo-noclick/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/neo-noclick/subscriptions",
+            "organizations_url": "https://api.github.com/users/neo-noclick/orgs",
+            "repos_url": "https://api.github.com/users/neo-noclick/repos",
+            "events_url": "https://api.github.com/users/neo-noclick/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/neo-noclick/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T06:31:23Z",
+        "updated_at": "2026-01-02T06:31:23Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated tests.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5613/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5613/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5612",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5612/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5612/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5612/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5612",
+        "id": 3775706656,
+        "node_id": "I_kwDOABPHjc7hDLYg",
+        "number": 5612,
+        "title": "Test Issue 1767335472",
+        "user": {
+            "login": "neo-noclick",
+            "id": 236739863,
+            "node_id": "U_kgDODhxdFw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/236739863?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/neo-noclick",
+            "html_url": "https://github.com/neo-noclick",
+            "followers_url": "https://api.github.com/users/neo-noclick/followers",
+            "following_url": "https://api.github.com/users/neo-noclick/following{/other_user}",
+            "gists_url": "https://api.github.com/users/neo-noclick/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/neo-noclick/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/neo-noclick/subscriptions",
+            "organizations_url": "https://api.github.com/users/neo-noclick/orgs",
+            "repos_url": "https://api.github.com/users/neo-noclick/repos",
+            "events_url": "https://api.github.com/users/neo-noclick/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/neo-noclick/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T06:31:12Z",
+        "updated_at": "2026-01-02T06:31:12Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated tests.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5612/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5612/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5610",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5610/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5610/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5610/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5610",
+        "id": 3775680572,
+        "node_id": "I_kwDOABPHjc7hDFA8",
+        "number": 5610,
+        "title": "MCP Test Issue - Safe to delete",
+        "user": {
+            "login": "mswinarski",
+            "id": 158271808,
+            "node_id": "U_kgDOCW8JQA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158271808?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mswinarski",
+            "html_url": "https://github.com/mswinarski",
+            "followers_url": "https://api.github.com/users/mswinarski/followers",
+            "following_url": "https://api.github.com/users/mswinarski/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mswinarski/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mswinarski/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mswinarski/subscriptions",
+            "organizations_url": "https://api.github.com/users/mswinarski/orgs",
+            "repos_url": "https://api.github.com/users/mswinarski/repos",
+            "events_url": "https://api.github.com/users/mswinarski/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mswinarski/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T06:14:31Z",
+        "updated_at": "2026-01-02T06:14:31Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated MCP testing. Safe to delete.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5610/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5610/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    },
+    {
+        "url": "https://api.github.com/repos/octocat/Hello-World/issues/5609",
+        "repository_url": "https://api.github.com/repos/octocat/Hello-World",
+        "labels_url": "https://api.github.com/repos/octocat/Hello-World/issues/5609/labels{/name}",
+        "comments_url": "https://api.github.com/repos/octocat/Hello-World/issues/5609/comments",
+        "events_url": "https://api.github.com/repos/octocat/Hello-World/issues/5609/events",
+        "html_url": "https://github.com/octocat/Hello-World/issues/5609",
+        "id": 3775521720,
+        "node_id": "I_kwDOABPHjc7hCeO4",
+        "number": 5609,
+        "title": "Test Issue 1767325308",
+        "user": {
+            "login": "neo-noclick",
+            "id": 236739863,
+            "node_id": "U_kgDODhxdFw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/236739863?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/neo-noclick",
+            "html_url": "https://github.com/neo-noclick",
+            "followers_url": "https://api.github.com/users/neo-noclick/followers",
+            "following_url": "https://api.github.com/users/neo-noclick/following{/other_user}",
+            "gists_url": "https://api.github.com/users/neo-noclick/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/neo-noclick/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/neo-noclick/subscriptions",
+            "organizations_url": "https://api.github.com/users/neo-noclick/orgs",
+            "repos_url": "https://api.github.com/users/neo-noclick/repos",
+            "events_url": "https://api.github.com/users/neo-noclick/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/neo-noclick/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "labels": [
+            
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+            
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-01-02T03:41:49Z",
+        "updated_at": "2026-01-02T03:41:49Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+            "blocked_by": 0,
+            "total_blocked_by": 0,
+            "blocking": 0,
+            "total_blocking": 0
+        },
+        "body": "This is a test issue created by automated tests.",
+        "closed_by": null,
+        "reactions": {
+            "url": "https://api.github.com/repos/octocat/Hello-World/issues/5609/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/octocat/Hello-World/issues/5609/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null
+    }
+]
+

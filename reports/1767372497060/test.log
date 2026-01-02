@@ -1,0 +1,20 @@
+[2026-01-02 04:48:17] [1] [INFO] 
+=========== WebDriver configuration ===========
+url=https://www.saucedemo.com/
+selenium_url=http://localhost:4444/wd/hub
+explicit_timeout=10
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+[2026-01-02 04:48:17] [1] [WARN] Reporting disabled: using no op test run registrar
+[2026-01-02 04:48:18] [1] [INFO] Set thread-count=1
+[2026-01-02 04:48:18] [1] [INFO] Set data-provider-thread-count=1
+[2026-01-02 04:48:18] [1] [INFO] CARINA_CORE_VERSION: 1.2.6
+[2026-01-02 04:48:43] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2026-01-02 04:48:43] [1] [INFO] RESULT #1: TEST [Web UI E2E Tests - verifySuccessfulLoginTest] PASS [log=file:///Users/lesifuges/Desktop/github-api-tests/reports/1767372497060/30853aa6-ea8f-43d6-8201-74b8ffaf75eb/test.log]
+[2026-01-02 04:48:43] [1] [INFO] RESULT #2: TEST [Web UI E2E Tests - testAddItemToCart] PASS [log=file:///Users/lesifuges/Desktop/github-api-tests/reports/1767372497060/9c045326-28d0-48ee-b73a-4a2644942e85/test.log]
+[2026-01-02 04:48:43] [1] [INFO] RESULT #3: TEST [Web UI E2E Tests - testPurchaseTwoItems] PASS [log=file:///Users/lesifuges/Desktop/github-api-tests/reports/1767372497060/ab4e068f-fae5-4e72-84e6-afbca4798548/test.log]
+[2026-01-02 04:48:43] [1] [INFO] RESULT #4: TEST [Web UI E2E Tests - testLockedUserCannotLogin] PASS [log=file:///Users/lesifuges/Desktop/github-api-tests/reports/1767372497060/c9e367a8-e676-4011-bb38-bf25403a13e2/test.log]
+[2026-01-02 04:48:43] [1] [INFO] RESULT #5: TEST [Web UI E2E Tests - testCheckoutMissingZipShowsError] PASS [log=file:///Users/lesifuges/Desktop/github-api-tests/reports/1767372497060/a5f7b2ab-d998-4d2e-aab7-23d231039986/test.log]
+[2026-01-02 04:48:43] [1] [INFO] RESULT #6: TEST [Web UI E2E Tests - testAddRemoveConsistency] PASS [log=file:///Users/lesifuges/Desktop/github-api-tests/reports/1767372497060/bb74c267-8420-4f03-9df3-b01c00a7a2de/test.log]

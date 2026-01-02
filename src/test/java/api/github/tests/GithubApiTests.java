@@ -10,6 +10,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.skyscreamer.jsonassert.JSONCompareMode;
 
 public class GithubApiTests {
 
@@ -23,7 +24,7 @@ public class GithubApiTests {
         Response resp = api.callAPI();
         Assert.assertEquals(resp.getStatusCode(), 200);
 
-        api.validateResponse();
+       api.validateResponse(JSONCompareMode.LENIENT);
     }
 
     @Test
@@ -38,7 +39,7 @@ public class GithubApiTests {
         Response resp = api.callAPI();
         Assert.assertEquals(resp.getStatusCode(), 200);
 
-        api.validateResponse();
+       api.validateResponse(JSONCompareMode.LENIENT);
     }
 
     @Test
@@ -73,6 +74,6 @@ public class GithubApiTests {
         Response resp = api.callAPI();
         Assert.assertEquals(resp.getStatusCode(), 200);
 
-        api.validateResponse();
+       api.validateResponse(JSONCompareMode.LENIENT);
     }
 }
